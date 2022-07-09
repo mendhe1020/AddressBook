@@ -19,6 +19,16 @@ class AddressBook
         Console.WriteLine("phone_number:"+ phone_number);
         Console.WriteLine("email:"+ email);
     }
+    public void printInf1()
+    {
+        Console.WriteLine("First_name:" + first_name);
+        Console.WriteLine("last_name:" + last_name);
+        Console.WriteLine("addres:" + address);
+        Console.WriteLine("state:" + state);
+        Console.WriteLine("zip:" + zip);
+        Console.WriteLine("phone_number:" + phone_number);
+        Console.WriteLine("email:" + email);
+    }
     static void Main(string[]args)
     {
         AddressBook asd = new AddressBook();
@@ -30,5 +40,16 @@ class AddressBook
         asd.phone_number = 7038315684;
         asd.email = "anurag.mendhe14@gmail.com";
         asd.printInf();
+
+        AddressBook asdd = new AddressBook();
+        
+        asd.first_name = "Mridul";
+        asd.last_name = "Jain";
+        asd.address = "Telibanda";
+        asd.state = "chhattisgarth";
+        asd.zip = 444005;
+        asd.phone_number = 7038315685;
+        asd.email = "mrigul.jain14@gmail.com";
+        asd.printInf1();
     }
 }
