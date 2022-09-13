@@ -7,7 +7,22 @@
             Console.WriteLine("Welcome to Address Book Sytem");
 
             ContactDetails contacts = new ContactDetails();
-            contacts.AddingPerson();
+            Contact contacts1 = new Contact();
+
+            while (true)
+            {
+                Console.WriteLine("Enter the option : \n1)Add Contact");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        contacts.AddingPerson(contacts1);
+                        contacts.Display();
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
 
     }
